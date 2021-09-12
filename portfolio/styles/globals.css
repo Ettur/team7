@@ -13,6 +13,9 @@ html,
   align-items: center;
 }
 
+canvas {
+  height: 500px;
+}
 
 /* HEADER */
 
