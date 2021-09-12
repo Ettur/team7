@@ -11,16 +11,10 @@
   "dependencies": {
     "@react-three/drei": "^7.7.0",
     "@react-three/fiber": "^7.0.6",
-    "@types/next": "^9.0.0",
-    "@types/node": "^16.9.1",
-    "@types/react": "^17.0.20",
-    "@types/react-dom": "^17.0.9",
-    "@types/three": "^0.131.0",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "three": "^0.132.2",
-    "typescript": "^4.4.3"
+    "three": "^0.132.2"
   },
   "devDependencies": {
     "eslint": "7.32.0",
