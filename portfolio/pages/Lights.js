@@ -3,7 +3,7 @@ import React from "react";
 const Lights = () => {
     return (
         <>
-            <ambientLight intensity={0.5}/>
+            <pointLight intensity={10} position={[0,0,10]} />
         </>
     )
 }

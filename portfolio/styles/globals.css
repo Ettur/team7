@@ -14,13 +14,14 @@ html,
 }
 
 canvas {
-  height: 500px;
+  height: 100vh;
 }
 
 /* HEADER */
 
 .header-container{
  width: 100%;
+ position: absolute;
 }
 
 .header-container h1 {
@@ -29,13 +30,25 @@ canvas {
 
 /* NAVIGATION */
 
-
 .navbar-container{
   width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  flex-direction: row;
 }
 
 .navbar-container li {
   list-style-type: none;
-  margin: 15px 0;
+  margin: 15px;
   text-align: center;
+  float: left;
+}
+
+.navbar-container ul{
+  display: block;
+}
+
+.main-container{
+  position: relative;
 }
