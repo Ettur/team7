@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import Navbar from './Navbar'
 import Lights from './Lights'
 import Model from './TestModel'
+import Header from './Header'
 import { PerspectiveCamera, OrbitControls} from '@react-three/drei'
 
 export default function Home() {
@@ -10,10 +11,8 @@ export default function Home() {
   return (
     <div>
       <div className='main-container'>
-        <div className='flex-center header-container'>
-        </div>
-
         <Navbar/>
+        <Header/>
         <main>
           <Canvas>
             <OrbitControls />
@@ -26,7 +25,6 @@ export default function Home() {
         </main>
 
         <footer>
-
         </footer>
       </div>
 
