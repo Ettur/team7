@@ -39,7 +39,7 @@ const Navbar = (props) => {
 
                     <a href='#blog'>
                         <li style={{borderBottomRightRadius:'3px', borderBottomLeftRadius:'3px'}} onClick={() => handleMenuNavigationClick(3)}>
-                            BLOG
+                            NEWS
                         </li>
                     </a>
                 </ul>

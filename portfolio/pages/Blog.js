@@ -3,7 +3,7 @@ import Header from './Header'
 
 const Blog = () => {
     return <div className='blog-container' id='blog'>
-        <Header headline='NEWS' info='CUTTING EDGE'/>
+        <Header headline='NEWS' info='LATEST UPDATES'/>
     </div>
 }
 export default Blog

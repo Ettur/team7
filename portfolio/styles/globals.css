@@ -141,6 +141,9 @@ canvas {
   background-color: sandybrown;
   scroll-snap-align: start;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-container{
@@ -157,4 +160,18 @@ canvas {
   background-color:slategrey;
   scroll-snap-align: start;
   position: relative;
+}
+
+.project-text-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.project-text-container p{
+  margin-right: 10px;
+  font-size: 3em;
+}
+
+.typewriter{
+  border-right: solid 5px black;
 }
