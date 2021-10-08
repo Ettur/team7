@@ -1,5 +1,4 @@
 import React from "react";
-import { AmbientLight } from "three";
 
 const Lights = () => {
     return (

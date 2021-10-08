@@ -1,9 +1,15 @@
 import * as React from 'react'
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+    const style = () => {
+        if (props.showNav) {
+            return 'flex-center navbar-container navbar-container-row'
+        }
+    }
 
     return <nav>
-        <div className='flex-center navbar-container'>
+       <div className='flex-center navbar-container'>
             <ul>
                 <li>
                     HOME

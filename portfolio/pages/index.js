@@ -1,17 +1,21 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Navbar from './Navbar'
 import Lights from './Lights'
 import Model from './TestModel'
 import Header from './Header'
 import { PerspectiveCamera, OrbitControls} from '@react-three/drei'
+import MenuButton from './MenuButton'
 
 export default function Home() {
+
+  const [showNav, setShowNav] = useState(false)
 
   return (
     <div>
       <div className='main-container'>
-        <Navbar/>
+        <MenuButton showNav={showNav} setShowNav={setShowNav}/>
+        <Navbar showNav={showNav} />
         <Header/>
         <main>
           <Canvas>
