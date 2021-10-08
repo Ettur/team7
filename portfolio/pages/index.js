@@ -1,6 +1,5 @@
 import React, { Suspense, useState, useEffect, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
-import Navbar from './Navbar'
 import Lights from './Lights'
 import Model from './TestModel'
 import Header from './Header'
@@ -18,8 +17,7 @@ export default function Home() {
   return (
     <div className = 'ultimate-container'>
       <div className='main-container' id='home'>
-        <MenuButton showNav={showNav} setShowNav={setShowNav}/>
-        <Navbar currentView={currentView} showNav={showNav} setShowNav={setShowNav} setCurrentView={setCurrentView} />
+        <MenuButton showNav={showNav} setShowNav={setShowNav} currentView={currentView} setCurrentView={setCurrentView}/>
         <Header/>
         <main>
           <Canvas>

@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from './Navbar'
 
 const MenuButton = (props) => {
 
@@ -8,7 +9,9 @@ const handleClick = () => {
 
 return <div className='menu-button-container' onClick={ () => handleClick()}>
     <img src='menu.svg'/>
-    {console.log(props.showNav)}
+    <div style={{position:'relative'}}>
+        <Navbar showNav={props.showNav} setShowNav={props.setShowNav} currentView={props.currentView} setCurrentView={props.setCurrentView} />
+    </div>
 </div>
 }
 

@@ -21,7 +21,8 @@ a{
 
 .ultimate-container{
   max-height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
 
@@ -40,8 +41,8 @@ canvas {
 .navbar-container{
   width: 100%;
   position: absolute;
-  top:0;
-  left: 0;
+  bottom: -0.71em;
+  right: -7%;
   flex-direction: row;
   z-index: 1;
   font-size: 1.5em;
@@ -127,9 +128,11 @@ canvas {
 .menu-button-container{
   position: fixed;
   z-index: 2;
-  bottom: 1%;
+  bottom: 2%;
   right: 7%;
   cursor: pointer;
+  width: 100%;
+  text-align: right;
 }
 
 .project-container{
