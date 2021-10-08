@@ -1,10 +1,10 @@
 import * as React from 'react'
 
-const Header = () => {
+const Header = (props) => {
 
 return <div className='header-container'>
-<h1>TEAM7</h1>
-<span>WORKS LIKE A MACHINE!</span>
+<h1>{props.headline}</h1>
+<span>{props.info}</span>
 </div>
 }
 

@@ -140,6 +140,7 @@ canvas {
   height: 100vh;
   background-color: sandybrown;
   scroll-snap-align: start;
+  position: relative;
 }
 
 .blog-container{
@@ -147,6 +148,7 @@ canvas {
   height: 100vh;
   background-color:seagreen;
   scroll-snap-align: start;
+  position: relative;
 }
 
 .team-container{
@@ -154,4 +156,5 @@ canvas {
   height: 100vh;
   background-color:slategrey;
   scroll-snap-align: start;
+  position: relative;
 }

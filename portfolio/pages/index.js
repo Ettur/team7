@@ -18,7 +18,7 @@ export default function Home() {
     <div className = 'ultimate-container'>
       <div className='main-container' id='home'>
         <MenuButton showNav={showNav} setShowNav={setShowNav} currentView={currentView} setCurrentView={setCurrentView}/>
-        <Header/>
+        <Header headline='TEAM7' info='WORKS LIKE A MACHINE!'/>
         <main>
           <Canvas>
             <OrbitControls enableZoom={false}/>
