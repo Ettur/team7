@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react'
+import React, { Suspense, useState, useEffect, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Navbar from './Navbar'
 import Lights from './Lights'
@@ -6,20 +6,24 @@ import Model from './TestModel'
 import Header from './Header'
 import { PerspectiveCamera, OrbitControls} from '@react-three/drei'
 import MenuButton from './MenuButton'
+import Project from './Project'
+import Team from './Team'
+import Blog from './Blog'
 
 export default function Home() {
 
   const [showNav, setShowNav] = useState(false)
+  const [currentView, setCurrentView] = useState(0)
 
   return (
-    <div>
-      <div className='main-container'>
+    <div className = 'ultimate-container'>
+      <div className='main-container' id='home'>
         <MenuButton showNav={showNav} setShowNav={setShowNav}/>
-        <Navbar showNav={showNav} />
+        <Navbar currentView={currentView} showNav={showNav} setShowNav={setShowNav} setCurrentView={setCurrentView} />
         <Header/>
         <main>
           <Canvas>
-            <OrbitControls />
+            <OrbitControls enableZoom={false}/>
             <PerspectiveCamera makeDefault position={[0, 4, 0]}/>
             <Lights/>
             <Suspense fallback={null}>
@@ -32,9 +36,9 @@ export default function Home() {
         </footer>
       </div>
 
-      <div>
-
-      </div>
+      <Project/>
+      <Team/>
+      <Blog/>
 
     </div>
   )
