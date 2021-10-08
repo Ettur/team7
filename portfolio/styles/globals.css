@@ -174,4 +174,22 @@ canvas {
 
 .typewriter{
   border-right: solid 5px black;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 4s steps(29) 1s 1 normal both,
+             animated-cursor 600ms steps(29) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 400px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: black;}
+  to{border-right-color: transparent;}
 }
