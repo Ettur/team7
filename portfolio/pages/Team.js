@@ -6,6 +6,17 @@ const Team = () => {
         <Header headline='TEAM' info='AVENGERS ASSEMBLE'/>
         <div className='cards-container'>
             <div className='card-row'>
+                <div className='card'>
+                    <div className ='face1'>
+                        <div className='imgbox'>
+                            <img src='brain.svg'/>
+                            <h3>MOONA</h3>
+                        </div>
+                    </div>
+                    <div className='face2'>
+
+                    </div>
+                </div>
 
             </div>
             <div className='card-row'>
