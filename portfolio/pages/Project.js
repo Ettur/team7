@@ -5,7 +5,7 @@ const Project = () => {
     return <div className='project-container' id='project'>
         <Header headline='PROJECT' info='CUTTING EDGE TECHNOLOGY'/>
         <div className='project-text-container'>
-            <p>C:\ </p><p className='typewriter'>COMING SOON ... </p>
+            <p className='typewriter'>COMING SOON ... </p>
         </div>
     </div>
 }
