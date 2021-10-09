@@ -14,7 +14,11 @@ const Team = () => {
                         </div>
                     </div>
                     <div className='face2'>
-
+                        <div className='content'>
+                            <span>Moona Taavitsainen</span>
+                            <span>Team Leader</span>
+                            <a href='#'>LINKED IN</a>
+                        </div>
                     </div>
                 </div>
 

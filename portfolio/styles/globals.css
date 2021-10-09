@@ -127,7 +127,7 @@ canvas {
 
 .menu-button-container{
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   bottom: 2%;
   right: 7%;
   cursor: pointer;
