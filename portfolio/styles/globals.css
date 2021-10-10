@@ -109,8 +109,8 @@ canvas {
 
 .header-container {
   position: absolute;
-  top: 15%;
-  left: 7%;
+  top: 10%;
+  left: 5%;
   z-index: 1;
   font-size: 2.5em;
   pointer-events: none;
@@ -314,7 +314,7 @@ canvas {
 }
 
 .latest-news {
-  width: 50%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -322,13 +322,22 @@ canvas {
 }
 
 .latest-news img {
-  width: 75%;
+  width: 100%;
   height: auto;
 }
 
 .latest-news-text {
-  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
-.latest-news span {
-  margin-bottom: 10px;
+
+.latest-news-text h2, p{
+  margin-bottom: calc(10px + 0.5vw);
 }
+
+.latest-news-text p{
+  align-self: start;
+}
+
