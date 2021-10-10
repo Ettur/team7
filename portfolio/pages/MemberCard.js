@@ -10,7 +10,6 @@ const MemberCard = (props) => {
         </div>
         <div className='face2'>
             <div className='member-content'>
-                <span>{props.name}</span>
                 <span>{props.role}</span>
                 <a href='#'>LINKED IN</a>
             </div>

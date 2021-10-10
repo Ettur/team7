@@ -7,8 +7,8 @@ const handleClick = () => {
     props.setShowNav(!props.showNav)
 }
 
-return <div className='menu-button-container' onClick={ () => handleClick()}>
-    <img src='menu.svg'/>
+return <div className='menu-button-container'>
+    <img src='menu.svg' style={{pointerEvents: 'all'}} onClick={ () => handleClick()}/>
     <div style={{position:'relative'}}>
         <Navbar showNav={props.showNav} setShowNav={props.setShowNav} currentView={props.currentView} setCurrentView={props.setCurrentView} />
     </div>

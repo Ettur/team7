@@ -59,6 +59,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: all;
 }
 
 .navbar-container-show {
@@ -97,6 +98,7 @@ canvas {
   color: red;
   cursor: pointer;
   overflow: hidden;
+  pointer-events: all;
 }
 
 .main-container {
@@ -137,6 +139,7 @@ canvas {
   cursor: pointer;
   width: 100%;
   text-align: right;
+  pointer-events: none;
 }
 
 .project-container {
@@ -231,25 +234,59 @@ canvas {
   align-items: center;
   width: 100%;
   height: 50%;
-  background-color: chocolate;
 }
 
 .card img {
-  width: 30%;
+  width: 25%;
   height: auto;
 }
 
 .card {
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 30%;
+  transition: 0.5s all;
 }
 
 .face1 {
+  position: relative;
+  width: 80%;
+  height: 50%;
+  background-color: slategray;
+  transition: 0.5s all;
+  transform: translateY(50%);
+  z-index: 1;
+  border-radius: 3px;
 }
 
 .face2 {
+  position: relative;
+  width: 80%;
+  height: 50%;
+  background-color: white;
+  transition: 0.5s all;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%);
+  border-radius: 3px;
+}
+
+.card:hover .face1 {
+  background-color: rosybrown;
+  transform: translateY(0) scale(1.2);
+}
+
+.card:hover .face2 {
+  background-color: skyblue;
+  transform: translateY(0) scale(1.2);
+}
+
+.card:hover {
+  transform: rotate(10deg);
 }
 
 .imgbox {
@@ -257,6 +294,11 @@ canvas {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
+}
+
+.imgbox h3 {
+  font-size: calc(12px + 1vw);
 }
 
 .member-content {
@@ -264,4 +306,6 @@ canvas {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: calc(12px + 1vw);
+  height: 100%;
 }
