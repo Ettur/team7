@@ -234,7 +234,16 @@ canvas {
   background-color: chocolate;
 }
 
+.card img {
+  width: 30%;
+  height: auto;
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .face1 {
@@ -244,4 +253,15 @@ canvas {
 }
 
 .imgbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.member-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

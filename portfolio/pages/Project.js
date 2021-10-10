@@ -3,7 +3,7 @@ import Header from "./Header";
 
 const Project = () => {
     return <div className='project-container' id='project'>
-        <Header headline='PROJECT' info='CUTTING EDGE'/>
+        <Header headline='PROJECT' info='CUTTING EDGE TECH'/>
         <div className='project-text-container'>
             <p className='typewriter'>COMING SOON ... </p>
         </div>
