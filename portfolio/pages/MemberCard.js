@@ -4,7 +4,7 @@ const MemberCard = (props) => {
     return  <div className='card'>
         <div className ='face1'>
             <div className='imgbox'>
-                <img src='brain.svg'/>
+                <img src={props.picture}/>
                 <h3>{props.header}</h3>
             </div>
         </div>

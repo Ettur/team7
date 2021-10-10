@@ -23,6 +23,8 @@ const Team = () => {
         <div className='cards-container' style={{marginTop: marginTop() + '%'}}>
             <div className='card-row'>
                 <MemberCard header='MOONA' name='MOONA TAAVITSAINEN' role='Team leader' picture='brain.svg' linked='url' />
+                <MemberCard header='ILDIKO' name='ILDIKO MAKRA' role='Developer' picture='tools.svg' linked='url' />
+                <MemberCard header='MARTIN' name='MARTIN AEDMA' role='Team leader' picture='tools.svg' linked='url' />
             </div>
             <div className='card-row'>
 
