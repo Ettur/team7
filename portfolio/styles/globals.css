@@ -41,7 +41,7 @@ canvas {
 .navbar-container {
   width: 100%;
   position: absolute;
-  bottom: -0.4em;
+  bottom: -0.6em;
   right: -7%;
   flex-direction: row;
   z-index: 1;
@@ -284,7 +284,7 @@ canvas {
 }
 
 .card:hover .face2 {
-  background-color: #9cb8ff;
+  background-color: #739EE6;
   transform: translateY(0);
 }
 
@@ -341,3 +341,20 @@ canvas {
   align-self: start;
 }
 
+.madewith-container{
+  position: absolute;
+  z-index: 4;
+  top: 18%;
+  right: calc(7% - 16px) ;
+  width: 100%;
+  text-align: right;
+  pointer-events: none;
+}
+
+.madewith-container img{
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  pointer-events: all;
+
+}

@@ -8,6 +8,7 @@ import MenuButton from './MenuButton'
 import Project from './Project'
 import Team from './Team'
 import Blog from './Blog'
+import MadeWith from './MadeWith'
 
 export default function Home() {
 
@@ -19,6 +20,8 @@ export default function Home() {
       <div className='main-container' id='home'>
         <MenuButton showNav={showNav} setShowNav={setShowNav} currentView={currentView} setCurrentView={setCurrentView}/>
         <Header headline='TEAM7' info='WORKS LIKE A MACHINE!'/>
+        <MadeWith path='nextjs.png' top='calc(18% - 50px)' />
+        <MadeWith path='threejs.png' top='calc(18% + 50px)'/>
         <main>
           <Canvas>
             <OrbitControls enableZoom={false}/>
@@ -29,9 +32,6 @@ export default function Home() {
             </Suspense>
           </Canvas>
         </main>
-
-        <footer>
-        </footer>
       </div>
 
       <Project/>
