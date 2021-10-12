@@ -75,8 +75,14 @@ canvas {
   color: white;
   font-size: 2em;
   padding: 5px;
-  width: 100%;
+  width: 50%;
   margin: auto;
+  transition: 0.5s all;
+}
+
+.navbar-container li:hover{
+  color: black;
+  background-color: white;
 }
 
 .navbar-container ul {

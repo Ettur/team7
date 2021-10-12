@@ -5,7 +5,6 @@ const MemberCard = (props) => {
         <div className ='face1'>
             <div className='imgbox'>
             <a href={props.linked} target='_blank' className='linkedin'>
-               { props.size.width > 1000 && <img src={props.picture}/>}
                 <h3>{props.header}</h3>
                 </a>
             </div>

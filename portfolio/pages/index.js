@@ -1,5 +1,5 @@
 import React, { Suspense, useState, useEffect, useRef } from 'react'
-import { Canvas } from '@react-three/fiber'
+import { Canvas, useFrame } from '@react-three/fiber'
 import Lights from './Lights'
 import Model from './TestModel'
 import Header from './Header'
@@ -15,6 +15,10 @@ export default function Home() {
   const [showNav, setShowNav] = useState(false)
   const [currentView, setCurrentView] = useState(0)
 
+  const cameraRef = useRef();
+
+  let y = 0;
+
   return (
     <div className = 'ultimate-container'>
       <div className='main-container' id='home'>
@@ -23,13 +27,14 @@ export default function Home() {
         <MadeWith path='nextjs.png' top='calc(18% - 50px)' />
         <MadeWith path='threejs.png' top='calc(18% + 50px)'/>
         <main>
-          <Canvas>
+          <Canvas style={{cursor:'pointer'}}>
             <OrbitControls enableZoom={false}/>
-            <PerspectiveCamera makeDefault position={[0, 4, 0]}/>
+            <PerspectiveCamera ref={cameraRef} makeDefault position={[-2.654673, 2.4060176, -1.7786442]}/>
             <Lights/>
             <Suspense fallback={null}>
               <Model position={[0,0,0]}/>
             </Suspense>
+            <AnimateFrame cameraRef={cameraRef} speed={0.1}/>
           </Canvas>
         </main>
       </div>
@@ -40,4 +45,12 @@ export default function Home() {
 
     </div>
   )
+}
+
+const AnimateFrame = (props) => {
+  useFrame((state) => {
+    //console.log(props.cameraRef.current.position)
+    console.log(state)
+  });
+  return null;
 }
