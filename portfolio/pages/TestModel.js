@@ -21,11 +21,7 @@ export default function Model({ ...props }) {
 
   const envMap = useCubeTexture(['posx.jpg', 'negx.jpg', 'posy.jpg', 'negy.jpg', 'posz.jpg', 'negz.jpg'], { path: 'hdr3/' })
 
-
-  const texture = useLoader(TextureLoader, 'metal.jpg')
   const material = <meshPhysicalMaterial attach='material' metalness={1} roughness={0.1} envMap={envMap} />
-
-
 
   return (
     <group ref={group} {...props} dispose={null} scale='0.5'>

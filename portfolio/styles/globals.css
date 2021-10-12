@@ -80,7 +80,7 @@ canvas {
   transition: 0.5s all;
 }
 
-.navbar-container li:hover{
+.navbar-container li:hover {
   color: black;
   background-color: white;
 }
@@ -293,7 +293,7 @@ canvas {
 }
 
 .card:hover .face2 {
-  background-color: #739EE6;
+  background-color: #739ee6;
   transform: translateY(0);
 }
 
@@ -333,6 +333,7 @@ canvas {
 .latest-news img {
   width: 100%;
   height: auto;
+  max-width: 500px;
 }
 
 .latest-news-text {
@@ -340,48 +341,50 @@ canvas {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  max-width: 500px;
 }
 
-.latest-news-text h2, p{
+.latest-news-text h2,
+p {
   margin-bottom: calc(10px + 0.5vw);
 }
 
-.latest-news-text p{
+.latest-news-text p {
   align-self: start;
 }
 
-.madewith-container{
+.madewith-container {
   position: absolute;
   z-index: 4;
   top: 18%;
-  right: calc(7% - 16px) ;
+  right: calc(7% - 16px);
   width: 100%;
   text-align: right;
   pointer-events: none;
 }
 
-.madewith-container img{
+.madewith-container img {
   width: 100px;
   border-radius: 5px;
   cursor: pointer;
   pointer-events: all;
-
 }
 
-.linkedin{
+.linkedin {
   text-align: center;
   font-size: calc(12px + 1vw);
   margin-top: 5px;
 }
 
-.linkedin img{
+.linkedin img {
   width: 40%;
   height: auto;
   margin-top: 5px;
-  max-width: 45px;
+  max-width: 40px;
 }
 
-.linkedin h3, a{
+.linkedin h3,
+a {
   display: inline;
   margin: auto 0;
   display: contents;
