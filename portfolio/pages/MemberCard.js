@@ -4,14 +4,14 @@ const MemberCard = (props) => {
     return  <div className='card'>
         <div className ='face1'>
             <div className='imgbox'>
-            <a href={props.linked} target='_blank' className='linkedin'>
+            <a href={props.linked} target='_blank' rel="noreferrer" className='linkedin'>
                 <h3>{props.header}</h3>
                 </a>
             </div>
         </div>
         <div className='face2'>
             <div className='member-content'>
-            <a href={props.linked} target='_blank' className='linkedin'>
+            <a href={props.linked} target='_blank' rel="noreferrer" className='linkedin'>
                 <span>{props.role}</span>
                     <img src='linked.svg'/>
                 </a>
