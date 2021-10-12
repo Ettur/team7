@@ -50,7 +50,6 @@ export default function Home() {
 const AnimateFrame = (props) => {
   useFrame((state) => {
     //console.log(props.cameraRef.current.position)
-    console.log(state)
   });
   return null;
 }
